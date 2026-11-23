@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>By the SeaCaf</title><link rel="stylesheet" href="style.css?v=4"></head>
+<body>
+<canvas id="cv"></canvas>
+<div id="menu" class="layer"><div class="logo"><small class="hand">a little place by the ocean</small><h1>BY THE<br>SEACAF</h1><p>Somewhere between the last wave and the first cup of coffee.</p>
+<button class="pix big" id="bStart">START YOUR STORY</button><button class="pix" id="bReset">NEW GAME</button></div></div>
+<div id="intro" class="layer hidden"><div class="paper letter"><small class="hand">a letter from june</small><p id="letter" class="cursive"></p><button class="pix" id="bOpen">OPEN THE CAFE</button></div></div>
+<div id="ui" class="hidden">
+ <div id="hud"><b id="tag"></b><span id="bPause" class="ib" title="Menu"></span><span id="bBook" class="ib"></span><span id="bSnd" class="ib"></span></div>
+ <div id="order" class="hidden"></div>
+ <div id="bar"></div>
+ <aside id="journal" class="paper"><div class="tabs"><button class="tab on" data-t="mem">Memories</button><button class="tab" data-t="june">June's notes</button><button class="tab" data-t="rec">Recipes</button><button class="tab" data-t="town">Town</button></div><h2 class="cursive">June's Journal</h2><div id="pages"></div></aside>
+ <div id="dlg"><canvas id="por" width="24" height="24"></canvas><div class="db"><b id="dn"></b><p id="dt"></p><div id="ch"></div>
+  <div id="brew" class="hidden"><div class="row" id="rD"></div><div class="row" id="rE"></div><div class="row" id="rF"></div><div id="pg" class="hidden"><canvas id="pc" width="16" height="16"></canvas><div class="bar"><i id="zone"></i><b id="mk"></b></div><button class="pix sm" id="bPour">POUR</button><button class="pix sm" id="bSkip">SKIP</button></div><div class="cl"><span id="cup"></span><span><button class="pix sm" id="bBack">BACK</button><button class="pix sm" id="bUndo">UNDO</button><button class="pix sm go" id="bServe" disabled>SERVE</button></span></div></div></div></div>
+ <div id="msg"></div>
+</div>
+<div id="ov" class="layer hidden"><div class="paper card"><small class="hand" id="oT"></small><h2 class="cursive" id="oH"></h2><p id="oP"></p><button class="pix" id="oB">CONTINUE</button></div></div>
+<script src="sprites.js"></script><script src="scene.js"></script><script src="audio.js"></script><script src="story.js"></script><script src="game.js"></script><script src="world.js"></script><script src="walk.js"></script><script src="scene_street.js"></script><script src="scene_rooms.js"></script><script src="scene_beach.js"></script><script src="scene_park.js"></script><script src="scene_harbour.js"></script><script src="scene_lighthouse.js"></script><script src="scene_upstairs.js"></script><script src="scene_cove.js"></script>
+</body></html>
